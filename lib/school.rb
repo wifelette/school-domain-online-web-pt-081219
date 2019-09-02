@@ -25,7 +25,6 @@ class School
     @roster.each_pair do |grade, students|
       students.sort!
     end
-    @roster
   end
 
 end
