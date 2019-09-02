@@ -4,8 +4,9 @@ class School
 	attr_reader
 	attr_writer :name
 
+	@roster = {}
+	
 	def initialize(name)
 		@name = name
-		@roster = {}
 	end
 end
