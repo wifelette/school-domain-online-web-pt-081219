@@ -3,15 +3,14 @@ class School
   attr_reader
   attr_writer :name
 
-  ROSTER = {}
-
   def initialize(name)
     @name = name
+    @roster = {}
   end
 
   def add_student(name, grade)
-    ROSTER[grade] = []
-    ROSTER[grade] << name
+    @roster[grade] = []
+    @roster[grade] << name
   end
 
   def roster
